@@ -7,6 +7,11 @@
     <script>
        $(function(){
            
+           $('button').click(function(){
+               var name = $('#name').val();
+               var color = $('#color').val();
+               
+           });
            
            
            
@@ -16,7 +21,14 @@
     </script>
   </head>
   <body>
-  <h1></h1>
-  <h2></h2>
-  </body>
+    <div style = "background-color: red;, width:200px;">
+        Name: <input style = "color:blue;" id="name"><br>
+
+        Color: <input  id="color1"><br>  
+        <button>Generate</button>
+    </div>
+    <h1></h1>
+    <h2></h2>
+    
+</body>
 </html>
