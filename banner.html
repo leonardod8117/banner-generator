@@ -10,7 +10,7 @@
         border:2px inset red;
       }
       
-      h1, h2 {
+      h1, h3 {
         text-align:center;
       }
       
@@ -38,12 +38,12 @@
                var color2 = $('#color2').val();
                var color3 = $('#color3').val();
                var motto = $('#motto').val();
-               $('h2').css('color', color3);
-               $('h2').html(motto);
+               $('h3').css({'color':color3, 'font-style':'italic'});
+               $('h3').html(motto);
                $('h1').html(name);
                $('h1').css('color', color2)
                $('body').css('background-color' , color1 );
-               $('div').slideUp(2);
+              $('div').slideUp(1000);
                
            });
            
@@ -58,7 +58,7 @@
     <div>
       <p>Generate your own banner!</p>
         Name: 
-       <input style = "color:blue;" id="name"><br>
+       <input id="name"><br>
         Enter a color: <input  id="color1"><br>  
         Enter another color: <input  id="color2"><br>  
         Enter third color: <input id="color3" type="text" name="3rd"/><br>
@@ -66,7 +66,7 @@
         <button>Generate</button>
     </div>
     <h1></h1>
-    <h2></h2>
+    <h3></h3>
     
 </body>
 </html>
